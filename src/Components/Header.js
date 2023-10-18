@@ -8,7 +8,7 @@ import {
   Navbar,
 } from "react-bootstrap";
 import logo from "./icon4.png";
-import { Route, HashRouter as Router, Routes } from "react-router-dom";
+import { Route, HashRouter, Routes } from "react-router-dom";
 
 import Home from "../Pages/Home";
 import About from "../Pages/About";
@@ -57,14 +57,14 @@ export default class Header extends Component {
           </Container>
         </Navbar>
 
-        <Router>
+        <HashRouter>
           <Routes>
             <Route exact path="/" element={<Home/>}/>
             <Route exact path="/about" element={<About/>} />
             <Route exact path="/contacts" element={<Contacts/>} />
             <Route exact path="/blog" element={<Blog/>} />
           </Routes>
-        </Router>
+        </HashRouter>
       </>
     );
   }
