@@ -8,7 +8,7 @@ import {
   Navbar,
 } from "react-bootstrap";
 import logo from "./icon4.png";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, HashRouter as Router, Routes } from "react-router-dom";
 
 import Home from "../Pages/Home";
 import About from "../Pages/About";
